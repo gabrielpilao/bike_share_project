@@ -5,9 +5,9 @@ CITY_DATA = {'chicago': 'chicago.csv', 'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
 list_of_options = ['month', 'weekday', 'both', 'none']
 
-list_of_options2 = [1, 2, 3, 4, 5, 6]
+list_of_months = [1, 2, 3, 4, 5, 6]
 
-list_of_options3 = ['monday', 'tuesday', 'wednesdey', 'thursday', 'friday']
+list_of_weekdays = ['monday', 'tuesday', 'wednesdey', 'thursday', 'friday']
 
 
 def get_filters():
@@ -43,7 +43,7 @@ def get_filters():
                         print('I\'m sorry, this is not a valid option please'
                               'select one of the following: 1,2,3,4,5,6')
                         continue
-            if month in list_of_options2:
+            if month in list_of_months:
                 break
             else:
                 print('I\'m sorry, this is not a valid option please'
@@ -58,7 +58,7 @@ def get_filters():
                 print('I\'m sorry, this is not a valid option please'
                       'select a valid week day')
                 continue
-            if weekday in list_of_options3:
+            if weekday in list_of_weekdays:
                 break
             else:
                 print('I\'m sorry, this is not a valid option'
@@ -76,7 +76,7 @@ def get_filters():
                 print('I\'m sorry, this is not a valid option please'
                       'select one of the following: 1,2,3,4,5,6')
                 continue
-            if month in list_of_options2:
+            if month in list_of_months:
                 break
             else:
                 print('I\'m sorry, this is not a valid option please'
@@ -92,7 +92,7 @@ def get_filters():
             except (ValueError, TypeError):
                 print('I\'m sorry, this is not a valid option'
                       'please select a valid week day')
-            if weekday in list_of_options3:
+            if weekday in list_of_weekdays:
                 break
             else:
                 print('I\'m sorry, this is not a valid option'
